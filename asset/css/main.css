@@ -1,0 +1,254 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --white: hsla(360, 100%, 100%, 1);
+  --dark: hsl(192, 100%, 9%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  width: 90%;
+}
+
+.btn {
+  border-radius: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn-small {
+  background-color: var(--white);
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.46);
+  color: #000;
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+}
+
+.btn-small:hover {
+}
+
+.btn-large {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 0.8rem 2.5rem;
+}
+/* Hero */
+.hero {
+  background-image: url(../img/bg-hero-mobile.svg);
+  background-color: hsl(193, 100%, 96%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.hero .hero-logo {
+  align-items: center;
+  /* border: 1px #000 solid; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.hero .hero-logo img {
+  max-width: 120px;
+  max-height: 20px;
+}
+
+.hero .hero-text {
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  max-width: 85%;
+}
+
+.hero .hero-text h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hero .hero-text p {
+  color: #0b2830;
+  font-size: 14px;
+}
+
+.hero .hero-bottom {
+  /* border: 1px solid red; */
+  margin-bottom: 4rem;
+}
+
+.hero .hero-img {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  max-width: 85%;
+}
+
+/* Secction Card */
+.card {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.card .card-section {
+  /* border: 1px solid blue; */
+  border-radius: 1rem;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 7%);
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.card .card-section h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card .card-section p {
+  color: #859096;
+  font-size: 1rem;
+  margin: 0 1.65rem;
+}
+
+/* Section report */
+.report {
+  /* border: 1px solid blue; */
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: -1px 0px 8px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -1px 0px 8px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -1px 0px 8px 3px rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 90%;
+  text-align: center;
+}
+
+.report .report-text h3 {
+  font-size: 18px;
+  margin: 0 0.5rem 2rem 0.5rem;
+  text-transform: capitalize;
+}
+
+/* Footer contact */
+.contact {
+  border: 1px solid white;
+  background-color: var(--dark);
+  margin-top: -6rem;
+  position: relative;
+  z-index: -1;
+}
+
+.contact .contact-flex {
+  /* border: 1px solid blue; */
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 90%;
+}
+
+.contact .contact-flex .logo-footer {
+  max-width: 150px;
+  max-height: 50px;
+}
+
+.contact-info {
+  margin: 1.5rem 0;
+}
+
+.contact-info .location,
+.contact-info .phone,
+.contact-info .email {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info .location .icon {
+  margin-top: 1.2rem;
+  width: 50px;
+}
+
+.contact-info .phone,
+.contact-info .email {
+  align-items: center;
+}
+
+.contact-info .icon {
+  margin-right: 0.7rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+}
+
+.contact-flex li {
+  display: block;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.contact .contact-social {
+  /* border: 1px solid var(--white); */
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.contact .contact-social .icon {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  height: 32px;
+  margin: 0 0.6rem;
+  position: relative;
+  width: 32px;
+}
+
+.contact .contact-social .icon i {
+  font-size: 1rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact .copyright {
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
