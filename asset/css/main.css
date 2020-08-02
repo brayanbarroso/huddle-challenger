@@ -2,11 +2,14 @@
   --pink: hsl(322, 100%, 66%);
   --white: hsla(360, 100%, 100%, 1);
   --dark: hsl(192, 100%, 9%);
+
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  /* Font Size: 1rem = 10px */
+  font-size: 62.5%;
 }
 
 body {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -48,26 +51,26 @@ ul {
 .btn-large {
   background-color: var(--pink);
   color: #fff;
-  padding: 0.8rem 2.5rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 4.5rem;
 }
-/* Hero */
+/*----------------- Hero ---------------------------*/
 .hero {
   background-image: url(../img/bg-hero-mobile.svg);
   background-color: hsl(193, 100%, 96%);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 .hero .hero-logo {
   align-items: center;
-  /* border: 1px #000 solid; */
   display: flex;
+  font-family: "Poppins", sans-serif;
   justify-content: space-between;
   margin-bottom: 5rem;
-  margin-top: 1rem;
+  margin-top: 2.8rem;
 }
 
 .hero .hero-logo img {
@@ -85,7 +88,8 @@ ul {
 }
 
 .hero .hero-text h1 {
-  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -98,16 +102,16 @@ ul {
 .hero .hero-bottom {
   /* border: 1px solid red; */
   margin-bottom: 4rem;
+  margin-top: 1rem;
 }
 
 .hero .hero-img {
   margin: 0 auto;
   margin-bottom: 3rem;
   margin-top: 2rem;
-  max-width: 85%;
 }
 
-/* Secction Card */
+/* ---------------Secction Card -----------------------*/
 .card {
   /* border: 1px solid black; */
   display: flex;
@@ -125,17 +129,17 @@ ul {
 }
 
 .card .card-section h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
 }
 
 .card .card-section p {
   color: #859096;
-  font-size: 1rem;
+  font-size: 1.8rem;
   margin: 0 1.65rem;
 }
 
-/* Section report */
+/*------------- Section report ------------------*/
 .report {
   /* border: 1px solid blue; */
   background-color: white;
@@ -155,33 +159,33 @@ ul {
 }
 
 .report .report-text h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   margin: 0 0.5rem 2rem 0.5rem;
   text-transform: capitalize;
 }
 
-/* Footer contact */
+/*-------------- Footer contact --------------------*/
 .contact {
-  border: 1px solid white;
   background-color: var(--dark);
-  margin-top: -6rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: -12rem;
   position: relative;
   z-index: -1;
 }
 
+.contact .logo-footer {
+  margin-top: 18rem;
+  max-width: 150px;
+  max-height: 50px;
+}
+
 .contact .contact-flex {
-  /* border: 1px solid blue; */
   color: var(--white);
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 10rem;
   width: 90%;
-}
-
-.contact .contact-flex .logo-footer {
-  max-width: 150px;
-  max-height: 50px;
 }
 
 .contact-info {
@@ -196,7 +200,7 @@ ul {
 }
 
 .contact-info .location .icon {
-  margin-top: 1.2rem;
+  margin-top: 2.4rem;
   width: 50px;
 }
 
@@ -206,25 +210,23 @@ ul {
 }
 
 .contact-info .icon {
-  margin-right: 0.7rem;
+  margin-right: 1.5rem;
 }
 
 .contact-info p {
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
 .contact-flex li {
   display: block;
+  font-size: 1.8rem;
   list-style: none;
   margin-top: 1rem;
 }
 
 .contact .contact-social {
-  /* border: 1px solid var(--white); */
-  align-items: center;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 3rem;
 }
@@ -239,7 +241,7 @@ ul {
 }
 
 .contact .contact-social .icon i {
-  font-size: 1rem;
+  font-size: 1.6rem;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -247,8 +249,157 @@ ul {
 }
 
 .contact .copyright {
-  font-size: 0.8rem;
+  color: var(--white);
+  font-size: 1rem;
   margin-bottom: 3rem;
   margin-top: 1.5rem;
   text-align: center;
+}
+
+/*------------------ Media query deskop ----------------- */
+@media only screen and (min-width: 784px) {
+  .btn-small {
+    padding: 1.2rem 5rem;
+  }
+
+  .hero {
+    background-image: url(../img/bg-hero-desktop.svg);
+  }
+
+  .hero .hero-logo img {
+    max-width: 200px;
+    max-height: 30px;
+  }
+
+  .hero-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-colum-1 {
+    margin-top: 6rem;
+    text-align: left;
+  }
+
+  .hero .hero-text {
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 600px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 3.3rem;
+    width: 400px;
+  }
+
+  .hero .hero-text p {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .hero .hero-img {
+    max-width: 600px;
+  }
+
+  /* --------------------- Card desktop -------------- */
+  .card-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 95%;
+  }
+
+  .card-section .together,
+  .card-section .users {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    order: 1;
+  }
+
+  .card-section .conversation {
+    height: 335px;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    margin-right: 8rem;
+    width: 70%;
+  }
+
+  .card-section .card-text {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    text-align: left;
+  }
+
+  .card-section .reverse-text {
+    box-sizing: border-box;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  .card-section h2 {
+    margin: 1rem 1.65rem;
+  }
+
+  /*------------- Section report ------------------*/
+  .report {
+    height: 280px;
+    width: 55%;
+  }
+
+  .report .report-text h3 {
+    font-size: 2.6rem;
+  }
+
+  /*------------- Section Footer ------------------*/
+  .contact .logo-footer {
+    margin-left: 5rem;
+    max-height: 45px;
+    max-width: 245px;
+  }
+
+  .contact .contact-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .contact .contact-flex .contact-info {
+    margin-top: 3rem;
+    margin-right: 6rem;
+    width: 40%;
+  }
+
+  .contact-flex .contact-info .location p {
+    font-size: 1.9rem;
+  }
+
+  .contact .contact-flex .contact-site {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    width: 30%;
+  }
+
+  .contact-flex li {
+    line-height: 2.3;
+  }
+
+  .contact .contact-flex .contact-social {
+    width: 30%;
+  }
+
+  .contact .copyright {
+    font-size: 1.2rem;
+    text-align: right;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    width: 90%;
+  }
+
+  .contact .attribution {
+    color: var(--white);
+  }
 }

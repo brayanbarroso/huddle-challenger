@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huddle</title>
+    <title>Huddle Landing</title>
     <link
       rel="shortcut icon"
       href="./asset/img/favicon-32x32.png"
@@ -23,22 +23,30 @@
     <header class="hero">
       <div class="content">
         <div class="hero-logo">
-          <img src="./asset/img/logo.svg" alt="" />
-          <a class="btn btn-small" href="#">try it free</a>
+          <div class="logo">
+            <img src="./asset/img/logo.svg" alt="Logo" />
+          </div>
+          <div class="bottom-hero">
+            <a class="btn btn-small" href="#">try it free</a>
+          </div>
         </div>
-        <div class="hero-text">
-          <h1>build the community your fans will love</h1>
-          <p>
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create conections with your ausers as you
-            engage in genuine discussion.
-          </p>
-        </div>
-        <div class="hero-bottom">
-          <a class="btn btn-large" href="#">get started for free</a>
-        </div>
-        <div class="hero-img">
-          <img src="./asset/img/illustration-mockups.svg" alt="" />
+        <div class="hero-flex">
+          <div class="hero-colum-1">
+            <div class="hero-text">
+              <h1>build the community your fans will love</h1>
+              <p>
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create conections with your
+                ausers as you engage in genuine discussion.
+              </p>
+            </div>
+            <div class="hero-bottom">
+              <a class="btn btn-large" href="#">get started for free</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="./asset/img/illustration-mockups.svg" alt="" />
+          </div>
         </div>
       </div>
     </header>
@@ -46,33 +54,48 @@
     <section class="card">
       <div class="content">
         <article class="card-section">
-          <img src="./asset/img/illustration-grow-together.svg" alt="" />
-          <h2>grow together</h2>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal communty. Think of tge insightful conversations you
-            miss out on with a feedback form.
-          </p>
+          <div class="card-img together">
+            <img src="./asset/img/illustration-grow-together.svg" alt="" />
+          </div>
+          <div class="card-text">
+            <h2>grow together</h2>
+            <p>
+              Generate meaningful discussions with your audience and build a
+              strong, loyal communty. Think of tge insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
         </article>
 
         <article class="card-section">
-          <img src="./asset/img/illustration-flowing-conversation.svg" alt="" />
-          <h2>Flowing Conversations</h2>
-          <p>
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
+          <div class="card-img conversation">
+            <img
+              src="./asset/img/illustration-flowing-conversation.svg"
+              alt=""
+            />
+          </div>
+          <div class="reverse-text">
+            <h2>Flowing Conversations</h2>
+            <p class="text-conversation">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
         </article>
 
         <article class="card-section">
-          <img src="./asset/img/illustration-your-users.svg" alt="" />
-          <h2>Your Users</h2>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+          <div class="card-img users">
+            <img src="./asset/img/illustration-your-users.svg" alt="" />
+          </div>
+          <div class="card-text">
+            <h2>Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
         </article>
       </div>
     </section>
@@ -83,12 +106,12 @@
         <a class="btn btn-large" href="#">get started for free</a>
       </div>
     </section>
-    <!-- Footer -->
+    <!--------------------------- Footer------------------ -->
     <footer class="contact">
+      <div class="logo-footer">
+        <img src="./asset/img/logo-footer.svg" alt="Logo Huddle" />
+      </div>
       <div class="contact-flex">
-        <div class="logo-footer">
-          <img src="./asset/img/logo-footer.svg" alt="Logo Huddle" />
-        </div>
         <div class="contact-info">
           <div class="location">
             <div class="icon">
@@ -131,10 +154,10 @@
           <div class="icon"><i class="fab fa-twitter"></i></div>
           <div class="icon"><i class="fab fa-instagram"></i></div>
         </div>
-        <p class="copyright">
-          &copy; Copyright 2018 Huddle. All rights reserved.
-        </p>
       </div>
+      <p class="copyright">
+        &copy; Copyright 2018 Huddle. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
