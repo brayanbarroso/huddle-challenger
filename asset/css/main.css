@@ -256,6 +256,14 @@ ul {
   text-align: center;
 }
 
+.attribution {
+  margin-left: 5rem;
+}
+
+.attribution a {
+  color: #dddbff;
+}
+
 /*------------------ Media query deskop ----------------- */
 @media only screen and (min-width: 784px) {
   .btn-small {
